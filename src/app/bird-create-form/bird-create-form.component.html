@@ -1,0 +1,16 @@
+<div class="container mt-4">
+    <form class = 'card p-1'>
+        <label for="name">Name: </label>
+        <input id="name" type="text" [formControl]="name">
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sex
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuSex">
+                <a class="dropdown-item" href="#">Female</a>                
+                <a class="dropdown-item" href="#">Male</a>                
+            </div>
+        </div>
+    </form>
+</div>

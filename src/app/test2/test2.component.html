@@ -1,0 +1,7 @@
+<p>test2 works!</p>
+<div *ngIf="pit$ | async as pit">
+    <p>{{ pit.taskId }}</p>
+    <p>{{ pit.code }}</p>
+    <p>{{ pit.dateInserted }}</p>
+    <p>{{ pit.comment }}</p>
+</div>

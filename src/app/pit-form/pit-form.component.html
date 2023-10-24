@@ -1,0 +1,20 @@
+
+<form [formGroup]="pitForm" (ngSubmit)="onSubmit()">
+
+<label for="taskid">Task Id: </label>
+<input id="taskid" type="number" formControlName="taskId">
+
+<label for="code">Code: </label>
+<input id="code" type="text" formControlName="code">
+
+<label for="DateInserted">Date Inserted: </label>
+<input id="dateInserted" type="date" formControlName="dateInserted">
+
+<label for="comment">Comment: </label>
+<input id="comment" type="text" formControlName="comment">
+
+<label for="comment">Health Check Id: </label>
+<input id="comment" type="number" formControlName="healthCheckId">
+
+<button class="button" type="submit">Create new PIT</button>
+</form>
