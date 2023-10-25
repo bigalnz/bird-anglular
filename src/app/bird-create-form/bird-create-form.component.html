@@ -3,14 +3,14 @@
         <label for="name">Name: </label>
         <input id="name" type="text" [formControl]="name">
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSex" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div ngbDropdown class="dropdown">
+            <button ngbDropdownToggle class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuSex" aria-expanded="false">
                 Sex
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuSex">
-                <a class="dropdown-item" href="#">Female</a>                
-                <a class="dropdown-item" href="#">Male</a>                
-            </div>
+            <ul ngbDropdownMenu aria-labelledby="dropdownMenuSex">
+                <li><a ngbDropdownItem href="#">Female</a></li>                
+                <li><a ngbDropdownItem href="#">Male</a></li>                
+            </ul>
         </div>
 
         <div class="dropdown">

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +11,7 @@ import { PitFormComponent } from './pit-form/pit-form.component';
 
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BirdCreateFormComponent } from './bird-create-form/bird-create-form.component';
 
@@ -26,7 +28,8 @@ import { BirdCreateFormComponent } from './bird-create-form/bird-create-form.com
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
